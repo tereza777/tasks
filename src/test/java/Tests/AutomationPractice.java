@@ -20,8 +20,10 @@
 //
 //    AutomationPracticePage automationPracticePage;
 //
-//
+
 //    @Test(priority = 1)
+// automationPracticePage = new AuAutomationPracticePage;
+
 //    public void verifyRadioButton() {
 //        automationPracticePage.clickRadioBtn();
 //        automationPracticePage.ClassExample();

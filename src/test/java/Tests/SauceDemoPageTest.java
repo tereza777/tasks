@@ -15,14 +15,14 @@ public class SauceDemoPageTest extends GoogleBase {
         driver.get("https://www.saucedemo.com/");
         sauceDemoPage.Login();
         sauceDemoPage.isProductPageLoad();
-        sauceDemoPage.SelectPrice("Low To High");
+        sauceDemoPage.SelectPrice(2);
         sauceDemoPage.checkFilter();
         sauceDemoPage.addJacketInCard();
         sauceDemoPage.clickShoppingCard();
         sauceDemoPage.checkItemInCard();
         sauceDemoPage.pressCheckout();
         sauceDemoPage.fillItemForms();
-        sauceDemoPage.checkPrice("Price not Match!");
+        sauceDemoPage.checkPrice("Total: $53.99");
         sauceDemoPage.clickFinish();
         sauceDemoPage.messageIsDisplayed();
 }

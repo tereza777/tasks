@@ -25,8 +25,8 @@ public class GoogleBase {
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
         driver.manage().window().maximize();
-//        driver.get(baseUrl);
-//        driver.get(baseUrl1);
+        driver.get(baseUrl);
+        driver.get(baseUrl1);
        // driver.get(baseUrl2);
 
     }

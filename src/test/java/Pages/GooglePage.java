@@ -10,7 +10,7 @@ public class GooglePage {
 
     WebDriver driver;
 
-    @FindBy(name = "q")
+    @FindBy(css = "q")
     WebElement googleInput;
 
     @FindBy(name = "btnK")
@@ -19,13 +19,6 @@ public class GooglePage {
     @FindBy(css = "a[href='https://auto.am/']")
     WebElement AutoAm;
 
-    @FindBy(css = "input[id='searchInp-small']")
-    WebElement SearchAuto;
-
-    @FindBy(css = "i[id='submit_search-small']")
-    WebElement SearchingTesla;
-
-
 
     public GooglePage(WebDriver driver) {
         this.driver = driver;
@@ -33,14 +26,17 @@ public class GooglePage {
     }
 
     public void inputSearchText(){
+
         googleInput.sendKeys("auto am");
     }
 
     public void clickGoogleSearchButton(){
+
         googleSearchButton.click();
     }
 
     public void clickAutoAm() {
+
         AutoAm.click();
     }
 }

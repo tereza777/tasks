@@ -25,7 +25,7 @@ public class SauceDemoPage {
     @FindBy(css = "span[class=\"title\"]")
     WebElement productsPage;
 
-    @FindBy(css = "option[value='lohi']")
+    @FindBy(css = "select[class=\"product_sort_container\"]")
     WebElement priceFilter;
 
     @FindBy(id = "add-to-cart-sauce-labs-fleece-jacket")
@@ -37,10 +37,10 @@ public class SauceDemoPage {
     @FindBy(css = "a[href=\"#\"] > div[class=inventory_item_name]")
     WebElement jacketInCart;
 
-    @FindBy(id = "\"checkout\"")
+    @FindBy(id = "checkout")
     WebElement checkout;
 
-    @FindBy(id = "id=\"first-name\"")
+    @FindBy(id = "first-name")
     WebElement firstName;
 
     @FindBy(name = "lastName")
@@ -80,11 +80,11 @@ public class SauceDemoPage {
         }
     }
 
-        public void SelectPrice(String lohi) {
-            Select t = new Select(priceFilter);
-            t.selectByValue(lohi);
-        }
+    public void SelectPrice(int lohi) {
+        Select t = new Select(priceFilter);
+        t.selectByIndex(lohi);
 
+    }
         public void checkFilter(){
         boolean displayed = priceFilter.isDisplayed();
         assertTrue(displayed, "Filter is not working properly");

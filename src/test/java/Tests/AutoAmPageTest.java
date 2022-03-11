@@ -27,9 +27,9 @@ public class AutoAmPageTest extends GoogleBase {
             autoAmPage.selectY2018("2018");
             autoAmPage.CustomCleared();
             autoAmPage.SearchButtn();
-            autoAmPage.checkQuantity("2");
+            autoAmPage.checkQuantity("\uE8B6 3");
             autoAmPage.checkIfElementisDisplayed();
-            autoAmPage.checkPrice("67000");
+            autoAmPage.checkPrice("$ 67 000");
 
         }
     }
