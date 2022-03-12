@@ -13,7 +13,7 @@ public class GoogleBase {
     public WebDriver driver;
     private String baseUrl = ("https://www.google.com/");
     private String baseUrl1 = ("https://auto.am/");
-   // private String baseUrl2 =("https://rahulshettyacademy.com/AutomationPractice/");
+    private String baseUrl2 =("https://rahulshettyacademy.com/AutomationPractice/");
     private String baseUrl3 = ("https://www.saucedemo.com/");
 
     @BeforeClass
@@ -27,7 +27,7 @@ public class GoogleBase {
         driver.manage().window().maximize();
         driver.get(baseUrl);
         driver.get(baseUrl1);
-       // driver.get(baseUrl2);
+        driver.get(baseUrl2);
 
     }
 
